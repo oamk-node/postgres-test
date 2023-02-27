@@ -26,9 +26,10 @@ app.get("/", (req, res) => {
     const pool = new pg_1.Pool({
         user: 'root',
         host: 'dpg-cfu59l2rrk0c830k5l7g-a.oregon-postgres.render.com',
-        database: 'todo',
+        database: 'todo_awmu',
         password: 'Fbs5hvojJZ6A713cmOzvHaklWZjUUElp',
-        port: 5432
+        port: 5432,
+        ssl: true
     });
     pool.query('select * from task', (error, result) => {
         if (error) {

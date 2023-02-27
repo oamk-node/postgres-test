@@ -26,9 +26,10 @@ app.get("/",(req: Request,res: Response)=> {
   const pool: Pool = new Pool({
     user: 'root',
     host: 'dpg-cfu59l2rrk0c830k5l7g-a.oregon-postgres.render.com',
-    database: 'todo',
+    database: 'todo_awmu',
     password: 'Fbs5hvojJZ6A713cmOzvHaklWZjUUElp',
-    port: 5432
+    port: 5432,
+    ssl: true
   })
 
 
